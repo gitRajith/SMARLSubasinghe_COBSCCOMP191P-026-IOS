@@ -30,8 +30,8 @@ class ProfileViewController: UIViewController {
                 print(user)
                 self.Firstname.text = user["username"]!
                 self.Lastname.text = user["lastname"]
-                self.Email.text = user["email"]
-                self.Role.text = user["role"]
+//                self.Email.text = user["email"]
+//                self.Role.text = user["role"]
             }
         }){ (error) in
             print(error.localizedDescription)
