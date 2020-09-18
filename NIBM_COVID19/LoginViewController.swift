@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
 //                [weak self]
                 authResult, error in
                 //guard let strongSelf = self else { return }
-                // ...
+         //strongSelf = self else { return }
             
                 if let e = error {
                     print(e)

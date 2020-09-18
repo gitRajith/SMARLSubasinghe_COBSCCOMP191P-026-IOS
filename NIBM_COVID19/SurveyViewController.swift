@@ -28,12 +28,12 @@ showImage()
     @IBOutlet weak var btnAnswer2: UIButton!
     
     
-    let quAndAns = [
-        ["Are you having fever, cough, sore throat or headache?","No"],
-        ["Have you been exposed with crowded places?","No"],
-        ["Have you been interact with sick person?","No"],
-        ["Have you been tarvel last 14 days?","No"]
-    ]
+//    let quAndAns = [
+//        ["Are you having fever, cough, sore throat or headache?","No"],
+//        ["Have you been exposed with crowded places?","No"],
+//        ["Have you been interact with sick person?","No"],
+//        ["Have you been tarvel last 14 days?","No"]
+//    ]
     
     var queNo=0
     var total=0
