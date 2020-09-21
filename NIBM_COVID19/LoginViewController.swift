@@ -27,17 +27,41 @@ class LoginViewController: UIViewController {
         if let email = email.text, let password = password.text {
             
             Auth.auth().signIn(withEmail: email, password: password) {
-//                [weak self]
+               
                 authResult, error in
-                //guard let strongSelf = self else { return }
-         //strongSelf = self else { return }
+                
             
                 if let e = error {
                     print(e)
-                // ...
+                    
+                    
+                    
+                    // create the alert
+                    let alert = UIAlertController(title: "Warning", message: "Please Check Credentials !!!", preferredStyle: UIAlertController.Style.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    
+                    
+                
             }
                 else {
-//                    self.performSegue(withIdentifier: loginSegway, sender: self?)
+                    self.performSegue(withIdentifier: "newloginSg", sender: self)
+                    
+                    
+                    // create the alert
+                    let alert = UIAlertController(title: "Login Sucess", message: "Please fill out this survey", preferredStyle: UIAlertController.Style.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
+                    
                     print("login success")
                     
                             }

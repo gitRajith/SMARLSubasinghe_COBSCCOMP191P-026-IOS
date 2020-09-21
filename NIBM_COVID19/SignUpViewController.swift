@@ -38,8 +38,8 @@ class SignUpViewController: UIViewController {
                     print(e)
                 }
                 else{
-                    //                    self.performSegue(withIdentifier: "SignupSegway", sender: self)
-                    //print("Success")
+                    
+                    
                     
                     let userId=authResult?.user.uid
                     let fName=self.Firstname.text
@@ -51,9 +51,9 @@ class SignUpViewController: UIViewController {
                     
                     self.ref.child("users").child(userId ?? "").setValue(["username":fName,"lastname":lName,"email":emailId,"role":uRole])
                     
-                    //self.performSegue(withIdentifier:"SignupSegway", sender:self)
+                    self.performSegue(withIdentifier:"SignupSegway", sender:self)
                     print("Success")
-                }// ...
+                }
     }
         }
     }

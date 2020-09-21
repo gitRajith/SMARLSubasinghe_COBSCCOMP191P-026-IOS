@@ -12,8 +12,8 @@ class SurveyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-showImage()
-        // Do any additional setup after loading the view.
+        showImage()
+        
     }
     
     @IBOutlet weak var SurveyImages: UIImageView!
@@ -78,16 +78,7 @@ showImage()
         self.performSegue(withIdentifier: "userDataSeg", sender: status)
     }
     
-   /* override func  prepare(for segue:UIStoryboardSegue, sender:Any?) {
-        if let dest = segue.destination as? ResultViewController{
-            if let uData = sender as? String {
-                dest.selectedDatedDate = uData
-            }
-        }
-    }
-     //this data
-
-    */
+  
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
     if let dest = segue.destination as? ResultViewController{
