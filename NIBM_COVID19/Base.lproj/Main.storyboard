@@ -950,11 +950,15 @@
                                     <segue destination="QE7-Db-IdV" kind="show" id="3AY-LJ-nw8"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="count" translatesAutoresizingMaskIntoConstraints="NO" id="vSc-6c-EIH">
+                                <rect key="frame" x="65" y="433" width="245" height="131"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VaC-Ia-zc6" firstAttribute="leading" secondItem="O4W-ZF-FSc" secondAttribute="leading" constant="65" id="03i-ls-zub"/>
                             <constraint firstItem="e4u-ri-gFS" firstAttribute="leading" secondItem="O4W-ZF-FSc" secondAttribute="leading" constant="65" id="1dD-SH-cpk"/>
+                            <constraint firstItem="O4W-ZF-FSc" firstAttribute="trailing" secondItem="vSc-6c-EIH" secondAttribute="trailing" constant="65" id="6XC-59-Ycu"/>
                             <constraint firstItem="O4W-ZF-FSc" firstAttribute="trailing" secondItem="e4u-ri-gFS" secondAttribute="trailing" constant="65" id="Qp7-LF-F7K"/>
                             <constraint firstItem="Kgy-3l-dat" firstAttribute="leading" secondItem="O4W-ZF-FSc" secondAttribute="leading" constant="65" id="TMg-0L-hfg"/>
                             <constraint firstItem="edb-nv-4ua" firstAttribute="leading" secondItem="O4W-ZF-FSc" secondAttribute="leading" constant="65" id="a0J-41-cjP"/>
@@ -963,6 +967,8 @@
                             <constraint firstItem="O4W-ZF-FSc" firstAttribute="trailing" secondItem="VaC-Ia-zc6" secondAttribute="trailing" constant="65" id="ecw-fT-Fls"/>
                             <constraint firstItem="e4u-ri-gFS" firstAttribute="top" secondItem="Kgy-3l-dat" secondAttribute="bottom" constant="86" id="emF-gu-QB8"/>
                             <constraint firstItem="O4W-ZF-FSc" firstAttribute="trailing" secondItem="edb-nv-4ua" secondAttribute="trailing" constant="65" id="lrh-qb-Y6e"/>
+                            <constraint firstItem="vSc-6c-EIH" firstAttribute="top" secondItem="edb-nv-4ua" secondAttribute="bottom" constant="57" id="oDZ-Vy-1l1"/>
+                            <constraint firstItem="vSc-6c-EIH" firstAttribute="leading" secondItem="O4W-ZF-FSc" secondAttribute="leading" constant="65" id="qMV-Fw-RJc"/>
                             <constraint firstItem="edb-nv-4ua" firstAttribute="top" secondItem="e4u-ri-gFS" secondAttribute="bottom" constant="40" id="tpU-Xh-d81"/>
                             <constraint firstItem="O4W-ZF-FSc" firstAttribute="trailing" secondItem="Kgy-3l-dat" secondAttribute="trailing" constant="65" id="vIl-oA-qKl"/>
                         </constraints>
@@ -1076,6 +1082,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="count" width="273" height="131"/>
         <image name="covidprevent" width="780" height="564"/>
         <image name="logo1" width="339" height="149"/>
         <image name="profile" width="860" height="900"/>
